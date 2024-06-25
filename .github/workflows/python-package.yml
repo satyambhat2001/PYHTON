@@ -1,4 +1,4 @@
-name: Python application
+name: Simple Interest Calculation
 
 on:
   push:
@@ -24,8 +24,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        # Add any dependencies if required in the future
+        # pip install -r requirements.txt
 
-    - name: Run tests
+    - name: Run Simple Interest Calculation
       run: |
-        pytest  # Adjust this line to match your test runner
+        echo "1000\n5\n5" | python simple_interest.py
